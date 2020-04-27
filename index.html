@@ -6,5 +6,173 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body class="body">
+    <header class="header">
+      <h1 id="title" class="title">freeCodeCamp Survey Form</h1>
+      <p id="description" class="description">
+        Thank you for taking the time to help us to improve the platform
+      </p>
+    </header>
+    <main class="main">
+      <article>
+        <form action="" id="survey-form" class="form">
+          <ul>
+            <li>
+              <label for="name" id="name-label">Name</label>
+              <input type="text" name="name" id="name" required placeholder="Enter your name" />
+            </li>
+            <li>
+              <label for="email" id="email-label">Email</label>
+              <input type="email" name="email" id="email" required placeholder="Enter your Email" />
+            </li>
+            <li>
+              <label for="number" id="number-label">Age (optional)</label>
+              <input type="number" name="number" id="number" min="18" max="25" placeholder="Age" />
+            </li>
+            <li>
+              <label for="dropdown">Which option best describes your current role?</label>
+              <select name="role" id="dropdown" required>
+                <option value="">Select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="secret">Prefer not to say</option>
+                <option value="other">Other</option>
+              </select>
+            </li>
+            <li>
+              <ul class="radio">
+                <li>
+                  <p>Would you recommend freeCodeCamp to a friend?</p>
+                </li>
+                <li>
+                  <label for="definitely">
+                    <input type="radio" name="recommend" id="definitely" value="definitely" />
+                    Definitely
+                  </label>
+                </li>
+                <li>
+                  <label for="maybe">
+                    <input type="radio" name="recommend" value="maybe" id="maybe" />
+                    Maybe
+                  </label>
+                </li>
+                <li>
+                  <label for="not-sure">
+                    <input type="radio" name="recommend" value="not-sure" id="not-sure" />
+                    Not sure
+                  </label>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <label for="feature-label">What is your favourite feature of freeCodeCamp?</label>
+              <select name="feature" id="feature-label" required>
+                <option value="">Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="open-source">Open source</option>
+              </select>
+            </li>
+            <li class="checkbox">
+              <ul>
+                <li>
+                  <p>What would you like to see improved? <span>(Check all that apply)</span></p>
+                </li>
+                <li>
+                  <label for="f-e-projects">
+                    <input
+                      type="checkbox"
+                      name="f-e-projects"
+                      id="f-e-projects"
+                      value="f-e-projects"
+                    />
+                    Front-end Projects
+                  </label>
+                </li>
+                <li>
+                  <label for="b-e-projects">
+                    <input
+                      type="checkbox"
+                      name="b-e-projects"
+                      id="b-e-projects"
+                      value="b-e-projects"
+                    />
+                    Back-end Projects
+                  </label>
+                </li>
+                <li>
+                  <label for="challenges">
+                    <input type="checkbox" name="challenges" id="challenges" value="challenges" />
+                    Challenges
+                  </label>
+                </li>
+                <li>
+                  <label for="o-s-community">
+                    <input
+                      type="checkbox"
+                      name="o-s-community"
+                      id="o-s-community"
+                      value="o-s-community"
+                    />
+                    Open Source Community
+                  </label>
+                </li>
+                <li>
+                  <label for="gitter">
+                    <input type="checkbox" name="gitter" id="gitter" value="gitter" />
+                    Gitter help rooms
+                  </label>
+                </li>
+                <li>
+                  <label for="videos">
+                    <input type="checkbox" name="videos" id="videos" value="videos" />
+                    Videos
+                  </label>
+                </li>
+                <li>
+                  <label for="meetups">
+                    <input type="checkbox" name="meetups" id="meetups" value="meetups" />
+                    City Meetups
+                  </label>
+                </li>
+                <li>
+                  <label for="wiki">
+                    <input type="checkbox" name="wiki" id="wiki" value="wiki" />
+                    Wiki
+                  </label>
+                </li>
+                <li>
+                  <label for="forum">
+                    <input type="checkbox" name="forum" id="forum" value="forum" />
+                    Forum
+                  </label>
+                </li>
+                <li>
+                  <label for="courses">
+                    <input type="checkbox" name="courses" id="courses" value="courses" />
+                    Additional Courses
+                  </label>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <label for="comments">Any comments or suggestions?</label>
+              <textarea
+                name="comments"
+                id="comments"
+                class="textarea"
+                cols="30"
+                rows="10"
+                placeholder="Enter your comment here..."
+              ></textarea>
+            </li>
+          </ul>
+          <button type="submit" id="submit" class="button">Submit</button>
+        </form>
+      </article>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
 </html>
