@@ -8,4 +8,4 @@ freeCodeCamp version:
 https://codepen.io/freeCodeCamp/full/VPaoNP
 
 My version:
-https://codepen.io/mada_uk/pen/LYpyKqN
+https://codepen.io/mada_uk/full/LYpyKqN
